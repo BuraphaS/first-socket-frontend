@@ -1,0 +1,165 @@
+/* Start - LINESeed */
+@font-face {
+  font-family: 'LINE Seed';
+  font-style: normal;
+  font-weight: 200;
+  src: local('LINESeed'), local('LINESeedSansTH'),
+        url('/fonts/LINESeed/WOFF2/LINESeedSansTH_W_Th.woff2') format('woff2'),
+        url('/fonts/LINESeed/WOFF/LINESeedSansTH_W_Th.woff') format('woff');
+}
+@font-face {
+  font-family: 'LINE Seed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('LINESeed'), local('LINESeedSansTH'),
+        url('/fonts/LINESeed/WOFF2/LINESeedSansTH_W_Rg.woff2') format('woff2'),
+        url('/fonts/LINESeed/WOFF/LINESeedSansTH_W_Rg.woff') format('woff');
+}
+@font-face {
+  font-family: 'LINE Seed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('LINESeed'), local('LINESeedSansTH'),
+        url('/fonts/LINESeed/WOFF2/LINESeedSansTH_W_Bd.woff2') format('woff2'),
+        url('/fonts/LINESeed/WOFF/LINESeedSansTH_W_Bd.woff') format('woff');
+}
+@font-face {
+  font-family: 'LINE Seed';
+  font-style: normal;
+  font-weight: 800;
+  src: local('LINESeed'), local('LINESeedSansTH'),
+        url('/fonts/LINESeed/WOFF2/LINESeedSansTH_W_XBd.woff2') format('woff2'),
+        url('/fonts/LINESeed/WOFF/LINESeedSansTH_W_XBd.woff') format('woff');
+}
+@font-face {
+  font-family: 'LINE Seed';
+  font-style: normal;
+  font-weight: 900;
+  src: local('LINESeed'), local('LINESeedSansTH'),
+        url('/fonts/LINESeed/WOFF2/LINESeedSansTH_W_He.woff2') format('woff2'),
+        url('/fonts/LINESeed/WOFF/LINESeedSansTH_W_He.woff') format('woff');
+}
+/* End - LINESeed */
+/* Start - SFProText */
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 100;
+    font-style: normal;
+    src: url('/fonts/SFProText/WOFF2/SF_Pro_Text_Thin.woff2') format('woff2'),
+          url('/fonts/SFProText/WOFF/SF_Pro_Text_Thin.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 200;
+    font-style: normal;
+    src: url('/fonts/SFProText/WOFF2/SF_Pro_Text_Ultralight.woff2') format('woff2'),
+          url('/fonts/SFProText/WOFF/SF_Pro_Text_Ultralight.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 300;
+    font-style: normal;
+    src: url('/fonts/SFProText/WOFF2/SF_Pro_Text_Light.woff2') format('woff2'),
+          url('/fonts/SFProText/WOFF/SF_Pro_Text_Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 400;
+    font-style: normal;
+    src: url('/fonts/SFProText/WOFF2/SF_Pro_Text_Regular.woff2') format('woff2'),
+          url('/fonts/SFProText/WOFF/SF_Pro_Text_Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 500;
+    font-style: normal;
+    src: url('/fonts/SFProText/WOFF2/SF_Pro_Text_Medium.woff2') format('woff2'),
+          url('/fonts/SFProText/WOFF/SF_Pro_Text_Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 600;
+    font-style: normal;
+    src: url('/fonts/SFProText/WOFF2/SF_Pro_Text_Semibold.woff2') format('woff2'),
+          url('/fonts/SFProText/WOFF/SF_Pro_Text_Semibold.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 700;
+    font-style: normal;
+    src: url('/fonts/SFProText/WOFF2/SF_Pro_Text_Bold.woff2') format('woff2'),
+          url('/fonts/SFProText/WOFF/SF_Pro_Text_Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: 800;
+    font-style: normal;
+    src: url('/fonts/SFProText/WOFF2/SF_Pro_Text.woff2') format('woff2'),
+          url('/fonts/SFProText/WOFF/SF_Pro_Text.woff') format('woff');
+}
+/* End - SFProText */
+/* Start - SFProDisplay */
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 100;
+    font-style: normal;
+    src: url('/fonts/SFProDisplay/WOFF2/SF_Pro_Display_Thin.woff2') format('woff2'),
+          url('/fonts/SFProDisplay/WOFF/SF_Pro_Display_Thin.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 200;
+    font-style: normal;
+    src: url('/fonts/SFProDisplay/WOFF2/SF_Pro_Display_Ultralight.woff2') format('woff2'),
+          url('/fonts/SFProDisplay/WOFF/SF_Pro_Display_Ultralight.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 300;
+    font-style: normal;
+    src: url('/fonts/SFProDisplay/WOFF2/SF_Pro_Display_Light.woff2') format('woff2'),
+          url('/fonts/SFProDisplay/WOFF/SF_Pro_Display_Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-style: normal;
+    src: url('/fonts/SFProDisplay/WOFF2/SF_Pro_Display_Regular.woff2') format('woff2'),
+          url('/fonts/SFProDisplay/WOFF/SF_Pro_Display_Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    font-style: normal;
+    src: url('/fonts/SFProDisplay/WOFF2/SF_Pro_Display_Medium.woff2') format('woff2'),
+          url('/fonts/SFProDisplay/WOFF/SF_Pro_Display_Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-style: normal;
+    src: url('/fonts/SFProDisplay/WOFF2/SF_Pro_Display_Semibold.woff2') format('woff2'),
+          url('/fonts/SFProDisplay/WOFF/SF_Pro_Display_Semibold.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-style: normal;
+    src: url('/fonts/SFProDisplay/WOFF2/SF_Pro_Display_Bold.woff2') format('woff2'),
+          url('/fonts/SFProDisplay/WOFF/SF_Pro_Display_Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 800;
+    font-style: normal;
+    src: url('/fonts/SFProDisplay/WOFF2/SF_Pro_Display_Heavy.woff2') format('woff2'),
+          url('/fonts/SFProDisplay/WOFF/SF_Pro_Display_Heavy.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: 900;
+    font-style: normal;
+    src: url('/fonts/SFProDisplay/WOFF2/SF_Pro_Display_Black.woff2') format('woff2'),
+          url('/fonts/SFProDisplay/WOFF/SF_Pro_Display_Black.woff') format('woff');
+}
+/* End - SFProDisplay */

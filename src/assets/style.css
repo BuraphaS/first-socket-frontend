@@ -1,0 +1,55 @@
+@import "./fonts.css";
+@import "./base.css";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "./primevue/tailwind.css";
+@import "tailwindcss/utilities";
+
+:root {
+  --p-primary-50: #eefff4;
+  --p-primary-100: #d8ffe8;
+  --p-primary-200: #b4fed1;
+  --p-primary-300: #7afbae;
+  --p-primary-400: #39ef82;
+  --p-primary-500: #0fd861;
+  --p-primary-600: #06c755;
+  --p-primary-700: #088d3f;
+  --p-primary-800: #0d6e36;
+  --p-primary-900: #0d5a2e;
+  --p-primary-950: #003317;
+  --p-surface-0: #ffffff;
+  --p-surface-50: #fafafa;
+  --p-surface-100: #f4f4f5;
+  --p-surface-200: #e4e4e7;
+  --p-surface-300: #d4d4d8;
+  --p-surface-400: #a1a1aa;
+  --p-surface-500: #71717a;
+  --p-surface-600: #52525b;
+  --p-surface-700: #3f3f46;
+  --p-surface-800: #27272a;
+  --p-surface-900: #18181b;
+  --p-surface-950: #09090b;
+  --p-content-border-radius: 6px;
+}
+
+:root {
+  --p-primary-color: var(--p-primary-600);
+  --p-primary-contrast-color: var(--p-surface-0);
+  --p-primary-hover-color: var(--p-primary-700);
+  --p-primary-active-color: var(--p-primary-800);
+  --p-content-border-color: var(--p-surface-200);
+  --p-content-hover-background: var(--p-surface-100);
+  --p-content-hover-color: var(--p-surface-800);
+  --p-highlight-background: var(--p-primary-50);
+  --p-highlight-color: var(--p-primary-800);
+  --p-highlight-focus-background: var(--p-primary-100);
+  --p-highlight-focus-color: var(--p-primary-900);
+  --p-text-color: var(--p-surface-800);
+  --p-text-hover-color: var(--p-surface-800);
+  --p-text-muted-color: var(--p-surface-500);
+  --p-text-hover-muted-color: var(--p-surface-600);
+}
+
+html {
+  @apply font-sans;
+}
