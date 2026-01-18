@@ -63,7 +63,7 @@
 <script setup lang="ts">
 import Button from 'primevue/button'
 import { computed, onMounted, ref } from 'vue'
-import { socket } from '@/utils/Socket.ts'
+import { bingoSocket } from '@/utils/Socket.ts'
 import { useAuthStore } from '@/stores/Auth'
 
 type Player = 'p1' | 'p2'
@@ -99,7 +99,7 @@ function drop(col: number) {
   if (winnerPlayer.value) return
   if (isColumnFull(col)) return
 
-  socket.emit('bingo:drop', {
+  bingoSocket.emit('bingo:drop', {
     room: props.roomName,
     col
   })
@@ -121,46 +121,46 @@ function cellClass(cell: Cell, index: number) {
 }
 
 function chooseSide(role: 'p1' | 'p2') {
-  socket.emit('chooseSide', {
+  bingoSocket.emit('chooseSide', {
     roomId: props.roomName,
     role,
     name: myName.value,
   })
 }
 function reset (): void {
-  socket.emit('bingo:reset', {
+  bingoSocket.emit('bingo:reset', {
     roomId: props.roomName,
   })
 }
 
 onMounted(() => {
-  socket.emit('bingo:join', {
+  bingoSocket.emit('bingo:join', {
     roomId: props.roomName,
     name: myName.value
   })
-  socket.on('droped', ({ index, player, currentPlayer: cp }) => {
+  bingoSocket.on('droped', ({ index, player, currentPlayer: cp }) => {
     cells.value[index].type =
     player === 'p1' ? 'active' : 'danger'
 
     currentPlayer.value = cp
   })
-  socket.on('gameStart', () => {
+  bingoSocket.on('gameStart', () => {
     cells.value = Array.from({ length: rows * cols }, () => ({ type: 'empty' }))
     winnerPlayer.value = null
     winningSet.value.clear()
     currentPlayer.value = 'p1'
   })
 
-  socket.on('playerAssigned', ({ role }) => {
+  bingoSocket.on('playerAssigned', ({ role }) => {
     myRole.value = role
   })
 
-  socket.on('playersUpdate', list => {
+  bingoSocket.on('playersUpdate', list => {
     firstChoose.value = list[0].role 
     players.value = list
   })
   
-  socket.on('gameReset', () => {
+  bingoSocket.on('gameReset', () => {
     cells.value = Array.from(
       { length: rows * cols },
       () => ({ type: 'empty' })
@@ -172,7 +172,7 @@ onMounted(() => {
     players.value = []
     firstChoose.value = ''
   })
-  socket.on('gameOver', ({ winner, winningIndexes }) => {
+  bingoSocket.on('gameOver', ({ winner, winningIndexes }) => {
     winnerPlayer.value = winner
     winningSet.value = new Set(winningIndexes);
   });

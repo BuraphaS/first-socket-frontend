@@ -1,5 +1,4 @@
 import { io, type Socket } from 'socket.io-client'
 
-export const socket: Socket = io('http://192.168.1.114:3000', {
-  transports: ['websocket']
-})
+export const bingoSocket: Socket = io(`${import.meta.env.VITE_APP_API_URL}/bingo`,)
+export const chatSocket: Socket = io(`${import.meta.env.VITE_APP_API_URL}/chat`,)

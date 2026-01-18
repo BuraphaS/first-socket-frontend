@@ -24,7 +24,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, computed } from 'vue'
-import { socket } from '@/utils/Socket.ts'
+import { chatSocket } from '@/utils/Socket.ts'
 import { Button, Dialog, InputText, Card } from "primevue"
 import { useAuthStore } from '@/stores/Auth'
 
@@ -46,7 +46,7 @@ function openModal (): void {
 
 function send (): void {
   if (!text.value) return
-  socket.emit('chat:send-message', {
+  chatSocket.emit('chat:send-message', {
     roomId: props.roomName,
     sender: fullName.value,
     message: text.value
@@ -55,9 +55,9 @@ function send (): void {
 }
 
 onMounted((): void => {
-  socket.emit('chat:join-room', props.roomName)
+  chatSocket.emit('chat:join-room', props.roomName)
 
-  socket.on('new-message', (data: any): void => {
+  chatSocket.on('new-message', (data: any): void => {
     messages.value.push(
       `${data.sender}: ${data.message}`
     )
